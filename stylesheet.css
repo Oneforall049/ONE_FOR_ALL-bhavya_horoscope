@@ -1,0 +1,512 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.header1{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    background-color: black;
+    color: gold;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav ul{
+    display:flex;
+    list-style-type: none;
+}
+nav ul li{
+    margin:0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+}
+nav ul li a:hover{
+    background-color: #ff914d;
+    border-radius: 10cap;
+    transform: scale(2);
+    -webkit-font-smoothing: antialiased;
+} 
+.header2{
+    position:fixed;
+    top: 82px;
+    left:0;
+    right: 0;
+    background-color: #737373;
+    padding: -15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+.header2 ul{
+    display: flex;
+    list-style-type: none;
+}
+.header2 ul li{
+    margin: 0px 15px;
+}
+.design-button{                              
+    font-size: 20px;
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    border:none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0px 10px 0px 0px;
+}
+.design-button:hover{
+    background-color: #ff914d;
+    transform:scale(1.1);
+}
+.dn-button{
+    font-size: 20px;
+    padding: 10px 15px;
+    background-color:white;
+    color: black;
+    border:none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: normal;
+    width: 220px;
+    text-transform: uppercase;
+    margin: 0px 340px 0px 70px;
+}
+.dn-button:hover{
+    background-color: red;
+    transform:scale(1.1);
+} 
+.parent-container {
+    position: relative;
+    top: 150px;
+    width: 96vw;
+    left: 20px;
+    height: 910vh;
+    background-image: url("horo-bg\(1\).jpg");
+    background-repeat: repeat;
+    background-size: contain;
+    border-radius: 50px;
+    border: 4px double white;
+    margin-top: 20px;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    box-sizing: border-box;
+} 
+.img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    object-fit: contain;
+    object-position: top;
+    display: block;
+}
+.overlay{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 1.9;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 60px;
+    white-space: nowrap;
+    z-index: 10;
+}
+h1.astro-head{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+    text-align:center;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: -750px;
+    white-space: nowrap;
+}
+.main-p{
+    position: absolute;
+    top: -630px;
+    left: -110px;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.9;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 70px;
+    white-space: nowrap;
+}
+h1.horo-head{
+    font-size: 45px;
+    font-weight: 400;
+    text-decoration: underline;
+    position: absolute;
+    text-align:center;
+    text-transform: uppercase;
+    margin-top: 60px;
+    left: 600px;
+}
+.horo-p{
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.9;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 60px;
+    white-space: nowrap;
+}
+.button-cc{
+    position: absolute;
+    top: -400px;
+    left: -280px;
+    width: auto;
+    background-color: transparent;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+}
+.button-cc ul{
+    display: flex;
+    list-style-type: none;
+    margin:0;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.button-cc ul li{
+        margin: 10px 20px;
+}
+.button-cc-1{
+    position: absolute;
+    top: -200px;
+    left: -280px;
+    width: auto;
+    background-color: transparent;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.button-cc-1 ul{
+    display: flex;
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.button-cc-1 ul li{
+        margin: 20px;
+}
+.image-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+.image-button button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+.image-button img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 3px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px double white;
+}
+.image-button img:hover {
+    transform: scale(1.1);
+}
+.image-button label {
+    font-size: 16px;
+    color: #f9f5f5;
+    text-transform: uppercase;
+    display: block;
+    padding: 20px;
+    margin-top: -20px;
+    width: 100px;
+    min-height: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+.image-button a{
+    text-decoration: none;
+}
+.label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: plum;
+    display: inline-block;
+    margin-top: 5px;
+    background: none;
+    text-transform: capitalize;
+}
+.label:hover{
+    color: #f1f5f8;
+    cursor: pointer;
+} 
+.child-aries-container {
+    position: absolute;
+    top: 990px;
+    width: 88vw;
+    left: 85px;
+    height: 60vh;
+    border-radius: 300px;
+    border: 4px double white;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    box-sizing: border-box;
+}
+.child-taurus-container {
+    position: absolute;
+    top: 1545px;
+    width: 88vw;
+    left: 85px;
+    height: 60vh;
+    border-radius: 300px;
+    border: 4px double white;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    box-sizing: border-box;
+}
+.child-gemini-container {
+    position: absolute;
+    top: 2100px;
+    width: 88vw;
+    left: 85px;
+    height: 60vh;
+    border-radius: 300px;
+    border: 4px double white;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    box-sizing: border-box;
+}
+.child-cancer-container {
+    position: absolute;
+    top: 2655px;
+    width: 88vw;
+    left: 85px;
+    height: 60vh;
+    border-radius: 300px;
+    border: 4px double white;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    box-sizing: border-box;
+}
+.child-leo-container {
+    position: absolute;
+    top: 3210px;
+    width: 88vw;
+    left: 85px;
+    height: 60vh;
+    border-radius: 300px;
+    border: 4px double white;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    box-sizing: border-box;
+}
+.child-virgo-container {
+    position: absolute;
+    top: 3765px;
+    width: 88vw;
+    left: 85px;
+    height: 60vh;
+    border-radius: 300px;
+    border: 4px double white;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    box-sizing: border-box;
+}
+.child-libra-container {
+    position: absolute;
+    top: 4320px;
+    width: 88vw;
+    left: 85px;
+    height: 60vh;
+    border-radius: 300px;
+    border: 4px double white;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    box-sizing: border-box;
+}
+.child-scorpio-container {
+    position: absolute;
+    top: 4875px;
+    width: 88vw;
+    left: 85px;
+    height: 60vh;
+    border-radius: 300px;
+    border: 4px double white;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    box-sizing: border-box;
+}
+.child-sagittarius-container {
+    position: absolute;
+    top: 5430px;
+    width: 88vw;
+    left: 85px;
+    height: 60vh;
+    border-radius: 300px;
+    border: 4px double white;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    box-sizing: border-box;
+}
+.child-capricorn-container {
+    position: absolute;
+    top: 5985px;
+    width: 88vw;
+    left: 85px;
+    height: 60vh;
+    border-radius: 300px;
+    border: 4px double white;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    box-sizing: border-box;
+}
+.child-aquarius-container {
+    position: absolute;
+    top: 6540px;
+    width: 88vw;
+    left: 85px;
+    height: 60vh;
+    border-radius: 300px;
+    border: 4px double white;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    box-sizing: border-box;
+}
+.child-pisces-container {
+    position: absolute;
+    top: 7095px;
+    width: 88vw;
+    left: 85px;
+    height: 60vh;
+    border-radius: 300px;
+    border: 4px double white;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    box-sizing: border-box;
+}
+.small-image {
+    position: absolute;
+    top: 140px;    
+    left: 150px;
+    width: 15vw;
+    height: 30vh;
+    object-position: center;
+    border-radius: 40px;
+    border: 2px solid gold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.small-image:hover{
+    background-color: #ff914d;
+    transform: scale(1.1);
+}
+.f-image{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    object-fit: contain;
+    object-position: top;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    top: 600px
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: #ff914d;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
